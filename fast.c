@@ -39,13 +39,13 @@ unsigned int readFromFile(char *filename, int block_size){
 	int bytes = block_size;
 	if(fd<0){
 		printf("Error in opeing file: %s. \n", filename);
-		return -1;
+		return 0;
 	}
 	unsigned int currentXor;
 	unsigned char *content = malloc (sizeof (unsigned char) * block_size) ;
 	if (content == NULL){
 		printf("Error in allocating space for buffer. \n");
-		return -1;
+		return 0;
 	}
 	while (bytes == block_size){
 

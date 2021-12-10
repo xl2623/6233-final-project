@@ -12,5 +12,9 @@ return block_count
 
 Part 6
 ./fast <filename>
-return XOR
+return XOR, the speed of the read
+Note: block_size is hardcoded, using the best-performing block_size
+
+./fast_noxor <filename>
+The speed of the read (Does NOT return XOR)
 Note: block_size is hardcoded, using the best-performing block_size

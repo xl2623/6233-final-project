@@ -52,7 +52,7 @@ unsigned int readFromFile(char *filename, int block_size){
 		bytes = readBlock (block_size, content, fd);
 		if (bytes < block_size){
 			currentXor = xorbuf (content, bytes);
-            free(content);
+
 		}else{
 			currentXor = xorbuf (content, block_size);	
 		}
@@ -66,7 +66,7 @@ unsigned int readFromFile(char *filename, int block_size){
 		}
 		
 	}
-
+        free(content);
 	close(fd);
 	return xor;
 }

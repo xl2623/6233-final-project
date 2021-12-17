@@ -9,6 +9,10 @@ will return time cost
 Part 2
 ./run2 <filename> <block_size>
 return block_count
+  
+Part 5
+./measure_sys <filename>
+return number of read lseek sys call and time used
 
 Part 6
 ./fast <filename>

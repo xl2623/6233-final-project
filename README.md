@@ -4,7 +4,7 @@ Use ./build.sh to compile the entire repo
 
 Part 1
 ./run <filename> [-r|-w] <block_size> <block_count>
-will return time cost and XOR
+will return time cost
   
 Part 2
 ./run2 <filename> <block_size>

@@ -12,7 +12,7 @@ return block_count
   
 Part 5  
 ./measure_sys <filename>  
-return number of read lseek sys call and time used  
+return number of lseek sys calls and time used  
   
 Part 6  
 ./fast <filename>  
